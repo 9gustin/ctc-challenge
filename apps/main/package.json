@@ -11,10 +11,7 @@
     "clean": "rm -rf .next && rm -rf .turbo"
   },
   "dependencies": {
-    "@acme/design-system": "workspace:*",
-    "@acme/pages": "workspace:*",
-    "@acme/utils": "workspace:*",
-    "@vercel/examples-ui": "^1.0.4",
+    "@9gustin/learning-paths": "workspace:*",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
@@ -23,7 +20,7 @@
     "@types/react": "latest",
     "autoprefixer": "^10.4.12",
     "eslint": "^8.11.0",
-    "eslint-config-acme": "workspace:*",
+    "eslint-config-ctc": "workspace:*",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.2.1",
     "typescript": "5.1.3"
