@@ -1,7 +1,8 @@
 export default function Detail(props: any): React.ReactNode {
   return (
     <div>
-      <pre>{JSON.stringify(props)}</pre>
+      <h1>Detail</h1>
+      <p>{JSON.stringify(props)}</p>
     </div>
   )
 }
