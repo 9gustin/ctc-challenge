@@ -11,7 +11,7 @@
       ]
     },
     "main#build": {
-      "dependsOn": ["^build", "$DOCS_URL"],
+      "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "test": {

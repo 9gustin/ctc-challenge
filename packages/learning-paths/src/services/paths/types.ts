@@ -45,6 +45,7 @@ export interface LearningPath {
   slug: string
   color: string
   level: number
+  money: string
   callOut: string
   ageRange: string
   courses: Omit<CourseResponse, 'order_in_learning_path'>[]

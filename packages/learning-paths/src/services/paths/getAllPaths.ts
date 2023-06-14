@@ -16,7 +16,6 @@ export const getAllPaths = async (): Promise<LearningPath[] | null> => {
     }
 
     const paths = (await response.json()) as GetAllPathsResponse
-    console.warn({ paths })
 
     return paths.all
       .sort((a, b) => a.order - b.order)
@@ -54,8 +53,9 @@ export const getAllPaths = async (): Promise<LearningPath[] | null> => {
           description,
           durationInMonths: Number(duration),
           secondaryColor: secondary_color,
-          formattedPrice: `USD ${amount_usd}`,
-          formattedPriceAfterDiscount: `USD ${amount_after_discount_usd}`,
+          money: 'USD',
+          formattedPrice: `${amount_usd}`,
+          formattedPriceAfterDiscount: `${amount_after_discount_usd}`,
         })
       )
   } catch (error: any) {
