@@ -50,9 +50,9 @@ export interface LearningPath {
   courses: Omit<CourseResponse, 'order_in_learning_path'>[]
   description: string
   secondaryColor: string
-  formattedPrice: number
+  formattedPrice: string
   durationInMonths: number
-  formattedPriceAfterDiscount: number
+  formattedPriceAfterDiscount: string
 }
 
 export const CountryPriceMapper = {
