@@ -56,7 +56,7 @@
     "@types/react": "^18.0.37",
     "chokidar": "^3.5.3",
     "eslint": "^8.38.0",
-    "typescript": "^5.0.4",
-    "eslint-config-ctc": "workspace:*"
+    "eslint-config-ctc": "workspace:*",
+    "typescript": "^5.0.4"
   }
 }
