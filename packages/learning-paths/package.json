@@ -1,6 +1,6 @@
 {
   "name": "@9gustin/learning-paths",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "scripts": {
     "dev": "pnpm build:swc -w",
@@ -51,11 +51,6 @@
       }
     }
   },
-  "peerDependencies": {
-    "next": "*",
-    "react": "^17.0.0 || ^18.0.0-0",
-    "react-dom": "^17.0.0 || ^18.0.0-0"
-  },
   "dependencies": {
     "@swc/helpers": "^0.5.1",
     "clsx": "^1.2.1"
@@ -67,6 +62,9 @@
     "chokidar": "^3.5.3",
     "eslint": "^8.38.0",
     "eslint-config-ctc": "workspace:*",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "next": "13.4",
+    "react": "^17.0.0 || ^18.0.0-0",
+    "react-dom": "^17.0.0 || ^18.0.0-0"
   }
 }

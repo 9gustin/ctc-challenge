@@ -1,6 +1,4 @@
-import { GetAllPathsResponse } from '../types'
-
-export const MOCK_GETALL: GetAllPathsResponse = {
+export const MOCK_GETALL = {
   all: [
     {
       id: 16,
