@@ -51,6 +51,7 @@ export const getPath = async (
       faqs,
       name,
       cover,
+      money: 'USD',
       callOut: call_out,
       durationInMonths: Number(duration),
       courses: courses

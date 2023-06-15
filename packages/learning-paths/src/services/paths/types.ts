@@ -145,6 +145,7 @@ export interface FullLearningPath {
   faqs: Faq[]
   name: string
   cover: string
+  money: string
   color: string
   callOut: string
   ageRange: string
