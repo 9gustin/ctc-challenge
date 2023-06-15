@@ -9,11 +9,15 @@ const Home: FC<{
   return (
     <section className="bg-gradient-to-b from-indigo-50 to-indigo-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-          <h2 className="text-2xl font-bold text-black">
+        <div className="mx-auto max-w-2xl py-8 md:py-20 lg:max-w-none">
+          <h2 className="text-2xl font-bold text-black hidden md:block">
             Rutas de 3 a 5 cursos organizados en niveles para que tu hij@
             profundice en el tema que le apasiona.
           </h2>
+          <h2 className="text-xl font-bold text-black md:hidden">
+            Elegi la ruta para tu hij@
+          </h2>
+
 
           <div className="bg-gray-100 mt-6 rounded-2xl p-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {paths
@@ -32,11 +36,11 @@ const Home: FC<{
                     formattedPriceAfterDiscount,
                   }) => (
                     <Link
-                      className="group relative p-4"
+                      className="flex flex-col group md:pb-8"
                       key={id}
                       href={`rutas/${slug}`}
                     >
-                      <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-90 sm:h-64">
+                      <div className="relative h-40 md:h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-90 sm:h-64">
                         <ImageFallback
                           height={320}
                           width={640}
@@ -46,21 +50,20 @@ const Home: FC<{
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
-                      <h3 className="mt-6 text-sm text-gray-500 flex items-center justify-between">
+                      <h3 className="mt-3 md:mt-6 text-gray-600 flex items-center justify-between">
                         <a href="#">
-                          <span className="absolute inset-0"></span>
                           {name}
                         </a>
-                        <span
-                          className="font-semibold py-1 px-3 rounded-xl text-gray-700"
+                      </h3>
+                      <span
+                          className="text-sm py-1 text-gray-500 mb-2"
                           style={{
-                            backgroundColor: secondaryColor,
+                            borderBottom: `1px solid ${secondaryColor}`,
                           }}
                         >
                           de {ageRange} años
                         </span>
-                      </h3>
-                      <p className="h-28 text-base font-semibold text-gray-900 line-clamp-4">
+                      <p className="h-18 md:h-20 line-clamp-3 text-base font-semibold text-gray-900">
                         {description}
                       </p>
                       <p className="mt-6 flex items-end justify-end gap-x-2">
@@ -68,11 +71,11 @@ const Home: FC<{
                           {courses.length} cursos por
                         </span>
                         <div className="flex flex-wrap w-min">
-                          <s className="text-2xl font-bold tracking-tight text-gray-400">
+                          <s className="text-md md:text-2xl font-bold tracking-tight text-gray-400">
                             {formattedPrice}
                           </s>
                           <span
-                            className="text-4xl font-bold tracking-tight text-gray-900"
+                            className="text-2xl md:text-4xl font-bold tracking-tight text-gray-900"
                             style={{
                               color,
                             }}
@@ -85,7 +88,7 @@ const Home: FC<{
                         </span>
                       </p>
                       <button
-                        className="mt-4 rounded-full font-bold bg-indigo-500 text-1xl w-full p-2 text-gray-100 opacity-90 group-hover:opacity-100"
+                        className="text-md md:text-1xl mt-4 rounded-full font-bold bg-indigo-500 w-full p-2 text-gray-100 opacity-90 group-hover:opacity-100"
                         style={{
                           backgroundColor: color,
                         }}
