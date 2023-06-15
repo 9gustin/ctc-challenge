@@ -4,10 +4,6 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
     // Add the external packages that are using Tailwind CSS
     './node_modules/@9gustin/learning-paths/src/pages/**/*.{js,ts,jsx,tsx}',
-  ],
-  safelist: [
-    {
-      pattern: /./, // the "." means "everything"
-    },
+    './node_modules/@9gustin/learning-paths/src/components/**/*.{js,ts,jsx,tsx}',
   ],
 }
